@@ -13,8 +13,8 @@ struct hw_module_t HAL_MODULE_INFO_SYM = {
 .id = "mydevice"
 .name = "Dummy random HAL",
 .author = "The Android Open Source Project",
-.methods = &dummy_module_methods,
-};
+	.methods = &dummy_module_methods,
+	};
 					
 		< Library Build >
 			Android.mk:
