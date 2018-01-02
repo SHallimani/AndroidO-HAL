@@ -11,11 +11,10 @@ struct hw_module_t HAL_MODULE_INFO_SYM = {
 .module_api_version = DUMMY_MODULE_API_VERSION_1_0,
 .hal_api_version = HARDWARE_HAL_API_VERSION,
 .id = "mydevice"
-.name = "Dummy random HAL",
-.author = "The Android Open Source Project",
-	.methods = &dummy_module_methods,
-	};
-					
+		.name = "Dummy random HAL",
+		.author = "The Android Open Source Project",
+		.methods = &dummy_module_methods,
+					};
 		< Library Build >
 			Android.mk:
 				LOCAL_MODULE := mydevice.default
