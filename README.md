@@ -12,19 +12,15 @@ Adding the sample reference example code on basic understand the HIDL design on 
  		struct hw_module_t HAL_MODULE_INFO_SYM = {
  
 						.tag = HARDWARE_MODULE_TAG,
-					
 						.module_api_version = DUMMY_MODULE_API_VERSION_1_0,
-
 						.hal_api_version = HARDWARE_HAL_API_VERSION,
-
 						.id = "mydevice"
 						.name = "Dummy random HAL",
 						.author = "The Android Open Source Project",
 						.methods = &dummy_module_methods,
-
 						};
 
 
-			< Library Build >
-					Android.mk:
-						LOCAL_MODULE := mydevice.default 
+		< Library Build >
+		Android.mk:
+			LOCAL_MODULE := mydevice.default 
