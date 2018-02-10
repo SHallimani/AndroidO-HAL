@@ -3,8 +3,7 @@ IMPORTANT NOTE: Please first refer to the Intel list about VT to make sure your 
 HAXM Speeds Up the Slow Android Emulator
 
       HAXM stands for - "Intel Hardware Accelerated Execution Manager"
-
-      Currently it supports only Intel® VT (Intel Virtualization Technology).
+      Currently it supports only Intel® VT (Intel Virtualization Technology)
 
 The Android emulator is based on QEMU. The interface between QEMU and the HAXM driver on the host system
 is designed to be vendor-agnostic
