@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------------------
+Project Treble splits Android into two parts: The Google part and the hardware support part
+-------------------------------------------------------------------------------------------
+
+How Google can build one update that works everywhere?
+
+when the Android N developer preview was released, we noticed something was different. With Android Marshmallow,
+Google had inserted a new partitioning structure that included a vendor partition.
+This held some files that had previously lived in the "regular" core OS folders in the system partition,
+as well as some files from the company who made the phone itself.
+But in the Android N developer preview, things changed even more and there were also files in this new partition
+that duplicated and overwrote pieces of the core OS when the phone was booted up.
+
+At the time, we put our heads together and did some extra digging and came to the conclusion
+that this was the first step towards making Android easy to update by giving companies like Samsung or Qualcomm
+a place to call their own and splitting the system into two parts: a vendor area and an Android core area
+
+
+Google announced Project Treble today,
+and everything has come full circle. This is exactly what
+that vendor area is for, and we get to see just how it
+can change the problem of phones not being updated fast enough
+
+The Vendor Interface and VTS (Vendor Test Suite) are coming with Android O,
+and it looks like this will take away any excuses for being slow with the updates.
+It's a fairly technical thing to describe, and if you're technically inclined,
+you should have a look at Google's blog post on it all,
+but we can break it down so that everyone can understand
+what this is and why it can make a big difference
+
+We all know Android comes from Google. Plenty of other companies work with Google to make
+Android better (and Google has invited companies to do even more of this), but the code is finalized 
+and hosted by Google. Anyone can download it and build it into Android, but this Android on its own
+is not a complete phone operating system.
+
+Android itself is not a complete operating system. You need support from hardware vendors to do anything
+
+Project Treble is a fundamental change in how Android is created and how third party vendors —
+companies like Qualcomm or NVIDIA — can add their required software outside of the main Android framework.
+It's a major undertaking and has been a long time coming, but it should alleviate much of
+the slow update problem we see from companies who make Android phones
+
+
+
